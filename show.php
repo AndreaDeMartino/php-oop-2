@@ -10,15 +10,16 @@
 <body>
   
   <header>
-    <h1 class="display-4 text-center text-success my-3">Info Venditore</h1>
+    <h1 class="vendor__title display-4 text-center text-success my-3">Info Venditore</h1>
   </header>
 
   <main>
-    <div class="box__article container mt-5">
-    <?php
-      // Import Venditore
-      include_once __DIR__ . '/Venditore.php'
-    ?>
+    <!-- Box Venditore -->
+    <div class="vendor__box container mt-5">
+      <?php
+        // Import Venditore
+        include_once __DIR__ . '/Venditore.php'
+      ?>
     </div>
   </main>
 

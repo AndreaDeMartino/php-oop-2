@@ -15,14 +15,15 @@
 <body>
   
   <header>
-    <h1 class="display-4 text-center text-primary my-3">Lista Articoli</h1>
-  </header>
+    <h1 class="article__title display-4 text-center text-primary my-3">Lista Articoli</h1>
+  </header>7
 
   <main>
-    <div class="box__article container mt-5">
+    <div class="article__box container mt-5">
       <div class="row">
 
-        <div class="col-4">
+        <!-- Menu articolo -->
+        <div class="article__menu col-4">
           <div class="list-group" id="list-tab" role="tablist">
             <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
               <?php echo $product1->nome_articolo ?>
@@ -33,7 +34,8 @@
           </div>
         </div>
 
-        <div class="col-8">
+        <!-- Contenuto Articolo -->
+        <div class="article__content col-8">
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
               <?php $product1->showArticolo(1) ?>
